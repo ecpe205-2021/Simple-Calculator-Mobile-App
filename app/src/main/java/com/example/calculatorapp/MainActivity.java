@@ -34,5 +34,23 @@ public class MainActivity extends AppCompatActivity {
 
         answer = findViewById(R.id.answer);
 
+        //addition algorithm
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String num1 = no1.getText().toString();
+                String num2 = no2.getText().toString();
+
+                if (num1.isEmpty() || num2.isEmpty()) {
+                    Toast.makeText(getApplicationContext(),"Enter Numbers",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    double a = Double.parseDouble(no1.getText().toString());
+                    double b = Double.parseDouble(no2.getText().toString());
+                    ans = a + b;
+                }
+            }
+        });
+
     }
 }
