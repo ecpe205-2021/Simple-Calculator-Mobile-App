@@ -147,62 +147,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         
-
-        //addition algorithm
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String num1 = no1.getText().toString();
-                String num2 = no2.getText().toString();
-
-                if (num1.isEmpty() || num2.isEmpty()) {
-                    Toast.makeText(getApplicationContext(),"Enter Numbers",Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    double a = Double.parseDouble(no1.getText().toString());
-                    double b = Double.parseDouble(no2.getText().toString());
-                    ans = a + b;
-                }
-            }
-        });
-
-        //subtraction
-        sub.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String num1 = no1.getText().toString();
-                String num2 = no2.getText().toString();
-
-                if (num1.isEmpty() || num2.isEmpty()) {
-                    Toast.makeText(getApplicationContext(),"Enter Numbers",Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    double a = Double.parseDouble(no1.getText().toString());
-                    double b = Double.parseDouble(no2.getText().toString());
-                    ans = a - b;
-                }
-            }
-        });
-
-        //multiplication algo
-        div.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String num1 = no1.getText().toString();
-                String num2 = no2.getText().toString();
-
-                if (num1.isEmpty() || num2.isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "Enter Numbers", Toast.LENGTH_SHORT).show();
-                } else {
-                    double a = Double.parseDouble(no1.getText().toString());
-                    double b = Double.parseDouble(no2.getText().toString());
-                    if (b != 0)
-                        ans = a / b;
-                    else
-                        Toast.makeText(getApplicationContext(), "Enter Valid Numbers", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
         // Division Algo
 
         div.setOnClickListener(new View.OnClickListener() {
@@ -225,18 +169,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-// displays answer
-        equal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String ans1 = String.valueOf(ans);
-                answer.setText(ans1);
-                ans= 0;
+        // displays answer
+          equal.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 String ans1 = String.valueOf(ans);
+                 answer.setText(ans1);
+                 ans= 0;
             }
         });
-
-    }
-}
 
     }
 }
