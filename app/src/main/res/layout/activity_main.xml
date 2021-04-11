@@ -8,12 +8,12 @@
     tools:context=".MainActivity"
     android:padding="20dp"
     android:orientation="vertical"
-    android:background="@drawable/calc">
+    android:background="@drawable/calcnew">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CALCULATOR"
+        android:text=""
         android:textSize="25sp"
         android:layout_marginBottom="16dp"
         android:textColor="@android:color/white" />
